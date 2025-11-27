@@ -37,7 +37,8 @@ while IFS= read -r image; do
     name=$(echo "${image}" | cut -d '/' -f2)
     tag=$(echo "${name}" | cut -d ':' -f2)
    # targetFullName=${TARGET_REGISTRY}/${TARGET_NAMESPACE}/${name}
-    targetFullName="${TARGET_REGISTRY}/${TARGET_NAMESPACE}/${image_and_tag}"
+    image_Tag=$(basename "${image}")
+    targetFullName="${TARGET_REGISTRY}/${TARGET_NAMESPACE}/${image_Tag}"
     # 打阿里云的tag
     docker tag "${image}" "${targetFullName}"
     tag_status=$?
