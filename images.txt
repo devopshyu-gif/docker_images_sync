@@ -1,1 +1,1 @@
-gitlab/gitlab-ce:latest
+flyway/flyway:9.11
