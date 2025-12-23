@@ -1,1 +1,1 @@
-python:3.13.3-slim-bookworm
+flyway/flyway:11.10.3-alpine
