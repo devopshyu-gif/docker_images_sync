@@ -1,1 +1,1 @@
-flyway/flyway:11.10.3-alpine
+confluentinc/cp-kafka:7.6.2
